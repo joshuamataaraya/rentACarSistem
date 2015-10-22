@@ -31,7 +31,7 @@ public class UsuarioController {
     public void eliminarUsuario(Usuario usuario1, String usuario, String contraseña) {
         /**
          * El primer administrador puede eliminar al que sea, 
-         * pero los otros administradores no pueden eliminar administradores
+//         * pero los otros administradores no pueden eliminar administradores
          *
          */
         if(UsuariosDB.getInstance().tipoUsuario(usuario,contraseña)==1 && usuario.equals("Joshua")){

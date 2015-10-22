@@ -74,7 +74,12 @@ public class CrearUsuarioUI extends javax.swing.JFrame {
 
         jLabel1.setText("Tipo:");
 
-        cbTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Administrador", "Cajero", "Auditor" }));
+        cbTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Administrador", "Auditor", "Cajero" }));
+        cbTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbTipoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,6 +156,10 @@ public class CrearUsuarioUI extends javax.swing.JFrame {
         this.setVisible(false);
         ventanaAnterior.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void cbTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbTipoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbTipoActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegistrarse;
