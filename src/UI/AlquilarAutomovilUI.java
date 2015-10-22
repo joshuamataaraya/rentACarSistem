@@ -5,6 +5,7 @@
  */
 package UI;
 
+import Control.AlquilarAutoController;
 import Logica.Auto;
 import Logica.Cliente;
 import java.util.ArrayList;
@@ -19,7 +20,10 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
      * Creates new form AlquilarAutomovilUI
      */
     private javax.swing.JFrame ventanaAnterior;
-    public AlquilarAutomovilUI(javax.swing.JFrame ventanaAnterior, ArrayList<Auto> pAutos,ArrayList<Cliente> pClientes) {
+    private AlquilarAutoController controller;
+    public AlquilarAutomovilUI(javax.swing.JFrame ventanaAnterior, 
+            AlquilarAutoController controller, ArrayList<Auto> pAutos,
+            ArrayList<Cliente> pClientes) {
         initComponents();
         
         for(Auto a: pAutos){
@@ -27,9 +31,10 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
         }
         
         for(Cliente c: pClientes){
-            cbAutos.addItem(c);
+            cbClientes.addItem(c);
         }
         this.ventanaAnterior= ventanaAnterior;
+        this.controller= controller;
     }
 
     /**
@@ -47,9 +52,9 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
         lblCliente = new javax.swing.JLabel();
         lblDuracion = new javax.swing.JLabel();
         cbAutos = new javax.swing.JComboBox();
-        txtDuracion = new javax.swing.JTextField();
         btnAlquilar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        fechaDevolucion = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,7 +70,7 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
 
         lblCliente.setText("Cliente:");
 
-        lblDuracion.setText("Dias de prestamo:");
+        lblDuracion.setText("Fecha de devolucion");
 
         cbAutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +79,11 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
         });
 
         btnAlquilar.setText("Alquilar");
+        btnAlquilar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAlquilarActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Volver");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -105,10 +115,10 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
                                     .addComponent(lblAuto))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(cbAutos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(cbAutos, 0, 128, Short.MAX_VALUE)
                                     .addComponent(cbClientes, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtDuracion, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE))))))
-                .addContainerGap(47, Short.MAX_VALUE))
+                                    .addComponent(fechaDevolucion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,15 +133,15 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCliente)
                     .addComponent(cbClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblDuracion)
-                    .addComponent(txtDuracion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(fechaDevolucion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAlquilar)
                     .addComponent(jButton1))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
@@ -151,17 +161,24 @@ public class AlquilarAutomovilUI extends javax.swing.JFrame {
         ventanaAnterior.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btnAlquilarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlquilarActionPerformed
+        // TODO add your handling code here:
+        controller.alquilarAuto((Cliente)cbClientes.getSelectedItem(), fechaDevolucion.getDate(),(Auto)cbAutos.getSelectedItem());
+        this.setVisible(false);
+        ventanaAnterior.setVisible(true);
+    }//GEN-LAST:event_btnAlquilarActionPerformed
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAlquilar;
     private javax.swing.JComboBox cbAutos;
     private javax.swing.JComboBox cbClientes;
+    private com.toedter.calendar.JDateChooser fechaDevolucion;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel lblAuto;
     private javax.swing.JLabel lblCliente;
     private javax.swing.JLabel lblDuracion;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JTextField txtDuracion;
     // End of variables declaration//GEN-END:variables
 }

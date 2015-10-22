@@ -5,6 +5,8 @@
  */
 package UI;
 
+import Control.UsuarioController;
+
 /**
  *
  * @author joshua
@@ -15,9 +17,12 @@ public class EliminarUsuarioUI extends javax.swing.JFrame {
      * Creates new form EliminarUsuarioUI
      */
     private javax.swing.JFrame ventanaAnterior;
-    public EliminarUsuarioUI(javax.swing.JFrame ventanaAnterior) {
+    private UsuarioController controller;
+    public EliminarUsuarioUI(javax.swing.JFrame ventanaAnterior,
+            UsuarioController controller) {
         initComponents();
         this.ventanaAnterior=ventanaAnterior;
+        this.controller=controller;            
     }
 
     /**

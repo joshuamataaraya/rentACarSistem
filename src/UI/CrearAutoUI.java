@@ -5,6 +5,8 @@
  */
 package UI;
 
+import Control.CrearAutoController;
+
 /**
  *
  * @author joshua
@@ -15,10 +17,13 @@ public class CrearAutoUI extends javax.swing.JFrame {
      * Creates new form CrearAutoUI
      */
     private javax.swing.JFrame ventanaAnterior;
-    public CrearAutoUI(javax.swing.JFrame ventanaAnterior) {
+    private CrearAutoController controller;
+    public CrearAutoUI(javax.swing.JFrame ventanaAnterior, 
+            CrearAutoController controller) {
         initComponents();
         
         this.ventanaAnterior=ventanaAnterior;
+        this.controller= controller;
     }
 
     /**
@@ -127,6 +132,9 @@ public class CrearAutoUI extends javax.swing.JFrame {
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
+        controller.crearAuto(txtNombre.getText(),txtModelo.getText(),txtFabricante.getText());
+        this.setVisible(false);
+        ventanaAnterior.setVisible(true);
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed

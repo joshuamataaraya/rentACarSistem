@@ -11,11 +11,11 @@ public class UsuarioController {
         
         switch(i){
             case 1:
-                CrearUsuarioUI crearUsuarioUI= new CrearUsuarioUI(ventana);
+                CrearUsuarioUI crearUsuarioUI= new CrearUsuarioUI(ventana,this);
                 crearUsuarioUI.setVisible(true);
                 break;
             case 2:
-                EliminarUsuarioUI eliminarUsuarioUI = new EliminarUsuarioUI(ventana);
+                EliminarUsuarioUI eliminarUsuarioUI = new EliminarUsuarioUI(ventana,this);
                 eliminarUsuarioUI.setVisible(true);
                 break;
         }

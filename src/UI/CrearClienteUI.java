@@ -5,6 +5,8 @@
  */
 package UI;
 
+import Control.ClienteController;
+
 /**
  *
  * @author joshua
@@ -15,9 +17,12 @@ public class CrearClienteUI extends javax.swing.JFrame {
      * Creates new form CrearClienteUI
      */
     private javax.swing.JFrame ventanaAnterior;
-    public CrearClienteUI(javax.swing.JFrame ventanaAnterior) {
+    private ClienteController controller;
+    public CrearClienteUI(javax.swing.JFrame ventanaAnterior, 
+            ClienteController controller) {
         initComponents();
         this.ventanaAnterior = ventanaAnterior;
+        this.controller=controller;
     }
 
     /**

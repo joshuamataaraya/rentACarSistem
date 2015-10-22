@@ -8,7 +8,7 @@ public class ClienteController {
     public ClienteController(javax.swing.JFrame ventana) {
         ventana.setVisible(false);
         
-        CrearClienteUI crearClienteUI= new CrearClienteUI(ventana);
+        CrearClienteUI crearClienteUI= new CrearClienteUI(ventana,this);
         crearClienteUI.setVisible(true);
     }
     public void listarClientes(){

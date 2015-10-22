@@ -45,15 +45,15 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="cbAutos" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cbAutos" alignment="0" pref="128" max="32767" attributes="0"/>
                                   <Component id="cbClientes" max="32767" attributes="0"/>
-                                  <Component id="txtDuracion" pref="128" max="32767" attributes="0"/>
+                                  <Component id="fechaDevolucion" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
+              <EmptySpace pref="29" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -72,17 +72,17 @@
                   <Component id="lblCliente" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cbClientes" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblDuracion" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDuracion" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lblDuracion" min="-2" max="-2" attributes="0"/>
+                  <Component id="fechaDevolucion" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnAlquilar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -115,7 +115,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblDuracion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Dias de prestamo:"/>
+        <Property name="text" type="java.lang.String" value="Fecha de devolucion"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="cbAutos">
@@ -128,12 +128,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbAutosActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDuracion">
-    </Component>
     <Component class="javax.swing.JButton" name="btnAlquilar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Alquilar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAlquilarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
@@ -142,6 +143,8 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="fechaDevolucion">
     </Component>
   </SubComponents>
 </Form>

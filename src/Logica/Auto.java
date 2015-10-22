@@ -6,7 +6,7 @@ public class Auto {
     private String nombre;
     private String modelo;
     private String fabricante;
-    public void crearAuto(String nombre,String modelo,String fabricante){
+    public Auto(String nombre,String modelo,String fabricante){
         this.nombre=nombre;
         this.modelo=modelo;
         this.fabricante=fabricante;

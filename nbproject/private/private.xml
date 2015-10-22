@@ -3,32 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Datos/ClienteDB.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/UIMenuAuditor.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Control/UsuarioController.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/CrearClienteUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/GenerarReporteUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/UIMenuAdministrador.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Control/CrearAutoController.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Control/AlquilarAutoController.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Logica/Login.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Datos/AutoDB.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/AlquilarAutomovilUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Control/ClienteController.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Logica/Usuario.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Logica/Cliente.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Logica/Alquiler.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/CrearUsuarioUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Control/GenerarReporteController.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Logica/Auto.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/EliminarUsuarioUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/UIMenuCajero.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Control/LoginController.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/CrearAutoUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Datos/UsuariosDB.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/Datos/Datos.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/UI/LoginUI.java</file>
-            <file>file:/home/joshua/Dropbox/Universidad/IV%20semestre/Requerimientos/Tareas/Tarea8/rentacar/src/rentacar/Rentacar.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Logica/Cliente.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/UI/CrearAutoUI.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Datos/Datos.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Control/AlquilarAutoController.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/UI/AlquilarAutomovilUI.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Logica/Auto.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Datos/ClienteDB.java</file>
+            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Datos/AutoDB.java</file>
         </group>
     </open-files>
 </project-private>

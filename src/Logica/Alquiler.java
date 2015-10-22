@@ -3,7 +3,13 @@ package Logica;
 import java.util.Date;
 
 public class Alquiler {
-    public void alquilarAuto(Cliente pCliente, Date pFechaDevolucion, Auto pAuto){
-        
+    private Cliente cliente;
+    private Date fechaDevolucion;
+    private Auto auto;
+    public Alquiler(Cliente pCliente, Date pFechaDevolucion, Auto pAuto) {
+        cliente=pCliente;
+        fechaDevolucion=pFechaDevolucion;
+        auto=pAuto;
     }
+    
 }

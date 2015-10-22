@@ -5,13 +5,21 @@
  */
 package Datos;
 
+import Logica.Auto;
+import Logica.Cliente;
+import java.util.ArrayList;
+
 /**
  *
  * @author joshua
  */
 public class ClienteDB {
     
+    private ArrayList<Cliente> clientes;
     private ClienteDB() {
+        clientes=new ArrayList<Cliente>();
+        clientes.add(new Cliente("Francinie"));
+        clientes.add(new Cliente("Jonathan"));
     }
     
     public static ClienteDB getInstance() {
@@ -21,5 +29,8 @@ public class ClienteDB {
     private static class ClienteDBHolder {
 
         private static final ClienteDB INSTANCE = new ClienteDB();
+    }
+    public ArrayList<Cliente> listarClientes(){
+        return clientes;
     }
 }

@@ -7,7 +7,7 @@ public class GenerarReporteController {
 
     public GenerarReporteController(javax.swing.JFrame ventana) {
         ventana.setVisible(false);
-        GenerarReporteUI generarReporteUI = new GenerarReporteUI(ventana);
+        GenerarReporteUI generarReporteUI = new GenerarReporteUI(ventana,this);
         generarReporteUI.setVisible(true);
     }
     
