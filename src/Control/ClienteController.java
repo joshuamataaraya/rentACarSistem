@@ -1,4 +1,5 @@
 package Control;
+import Datos.ClienteDB;
 import UI.CrearClienteUI;
 import UI.UIMenuAdministrador;
 import java.util.ArrayList;
@@ -11,7 +12,9 @@ public class ClienteController {
         CrearClienteUI crearClienteUI= new CrearClienteUI(ventana,this);
         crearClienteUI.setVisible(true);
     }
-    public void listarClientes(){
-        
+
+    public void crearCliente(String nombre) {
+        ClienteDB.getInstance().crearCliente(nombre);
     }
+    
 }

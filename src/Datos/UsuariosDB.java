@@ -15,6 +15,10 @@ public class UsuariosDB {
     public static UsuariosDB getInstance() {
         return UsuariosDBHolder.INSTANCE;
     }
+
+    public void crearUsuario(String usuario, String contrasenia, int tipo) {
+        usuarios.add(new Usuario(usuario,contrasenia,tipo+1));
+    }
     
     private static class UsuariosDBHolder {
 
@@ -23,4 +27,5 @@ public class UsuariosDB {
     public ArrayList<Usuario> getUsuarios(){
         return usuarios;
     }
+    
 }

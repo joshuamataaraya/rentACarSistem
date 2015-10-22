@@ -52,7 +52,7 @@ public class CrearClienteUI extends javax.swing.JFrame {
 
         lblNombre.setText("Nombre:");
 
-        btnRegistrarse.setText("Registrarse");
+        btnRegistrarse.setText("Crear");
         btnRegistrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistrarseActionPerformed(evt);
@@ -112,6 +112,7 @@ public class CrearClienteUI extends javax.swing.JFrame {
 
     private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
         // TODO add your handling code here:
+        controller.crearCliente(txtNombre.getText());
     }//GEN-LAST:event_btnRegistrarseActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

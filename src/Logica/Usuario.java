@@ -23,4 +23,7 @@ public class Usuario {
     public boolean verificarUsuario(String txtUsuario, String txtContraseña) {
         return usuario.equals(txtUsuario) && contrasenia.equals(txtContraseña);
     }
+    public String toString(){
+        return usuario;
+    }
 }

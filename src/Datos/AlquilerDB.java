@@ -25,6 +25,10 @@ public class AlquilerDB {
     public static AlquilerDB getInstance() {
         return AlquilerDBHolder.INSTANCE;
     }
+
+    public ArrayList<Alquiler> getAlquileres() {
+        return alquileres;
+    }
     
     private static class AlquilerDBHolder {
 

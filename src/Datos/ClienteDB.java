@@ -25,6 +25,10 @@ public class ClienteDB {
     public static ClienteDB getInstance() {
         return ClienteDBHolder.INSTANCE;
     }
+
+    public void crearCliente(String nombre) {
+        clientes.add(new Cliente(nombre));
+    }
     
     private static class ClienteDBHolder {
 

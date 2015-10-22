@@ -36,9 +36,9 @@ public class GenerarReporteUI extends javax.swing.JFrame {
 
         lblTitulo = new javax.swing.JLabel();
         lblInstrucciones = new javax.swing.JLabel();
-        btnEliminar = new javax.swing.JButton();
+        btnGenerar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtReporte = new javax.swing.JTextArea();
         lblInstrucciones1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         fechaFinal = new com.toedter.calendar.JDateChooser();
@@ -50,11 +50,16 @@ public class GenerarReporteUI extends javax.swing.JFrame {
 
         lblInstrucciones.setText("Fecha Inicial:");
 
-        btnEliminar.setText("GENERAR");
+        btnGenerar.setText("GENERAR");
+        btnGenerar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarActionPerformed(evt);
+            }
+        });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtReporte.setColumns(20);
+        txtReporte.setRows(5);
+        jScrollPane1.setViewportView(txtReporte);
 
         lblInstrucciones1.setText("Fecha Final:");
 
@@ -82,7 +87,7 @@ public class GenerarReporteUI extends javax.swing.JFrame {
                         .addComponent(fechaFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEliminar)
+                            .addComponent(btnGenerar)
                             .addComponent(jButton1))
                         .addGap(33, 33, 33)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -107,7 +112,7 @@ public class GenerarReporteUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
-                                .addComponent(btnEliminar)
+                                .addComponent(btnGenerar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jButton1))
                             .addGroup(layout.createSequentialGroup()
@@ -126,17 +131,22 @@ public class GenerarReporteUI extends javax.swing.JFrame {
         ventanaAnterior.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarActionPerformed
+        // TODO add your handling code here:
+        txtReporte.setText(controller.getReporte(fechaInicial.getDate(),fechaFinal.getDate()));
+    }//GEN-LAST:event_btnGenerarActionPerformed
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnGenerar;
     private com.toedter.calendar.JDateChooser fechaFinal;
     private com.toedter.calendar.JDateChooser fechaInicial;
     private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblInstrucciones;
     private javax.swing.JLabel lblInstrucciones1;
     private javax.swing.JLabel lblTitulo;
+    private javax.swing.JTextArea txtReporte;
     // End of variables declaration//GEN-END:variables
 }

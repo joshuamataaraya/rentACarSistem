@@ -11,5 +11,16 @@ public class Alquiler {
         fechaDevolucion=pFechaDevolucion;
         auto=pAuto;
     }
+    public Auto getAuto(){
+        return auto;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Date getFechaDevolucion() {
+        return this.fechaDevolucion;
+    }
     
 }
