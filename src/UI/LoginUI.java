@@ -116,17 +116,19 @@ public class LoginUI extends javax.swing.JFrame {
             this.setVisible(false);
             switch(controller.tipoUsuario(txtUsuario.getText(),txtContraseña.getText())){
                 case 1:
-                    UIMenuAdministrador menu = new UIMenuAdministrador();
+                    UIMenuAdministrador menu = new UIMenuAdministrador(this);
                     menu.setVisible(true);
                     break;
                 case 2:
-                    UIMenuAuditor menu2 = new UIMenuAuditor();
+                    UIMenuAuditor menu2 = new UIMenuAuditor(this);
                     menu2.setVisible(true);
                     break;
                 case 3:
-                    UIMenuCajero menu3 = new UIMenuCajero();
+                    UIMenuCajero menu3 = new UIMenuCajero(this);
                     menu3.setVisible(true);
                     break;
+                default:
+                    this.setVisible(true);
             }
         }
     }//GEN-LAST:event_btnEntrarActionPerformed

@@ -1,18 +1,14 @@
 package Control;
 
 import Datos.UsuariosDB;
-import Logica.Login;
 import Logica.Usuario;
 import UI.LoginUI;
 import javax.swing.JTextField;
 
 public class LoginController {
-    private Login login;
     public LoginController(){
         LoginUI Uinterface = new LoginUI(this);
         Uinterface.setVisible(true);
-        
-        login = new Login();
     }
 
     public boolean validarUsuario(String txtUsuario, String txtContraseña) {
@@ -26,6 +22,6 @@ public class LoginController {
     }
 
     public int tipoUsuario(String usuario, String Contrasena) {
-        return login.tipoUsuario(usuario, Contrasena);
+        return UsuariosDB.getInstance().tipoUsuario(usuario, Contrasena);
     }
 }

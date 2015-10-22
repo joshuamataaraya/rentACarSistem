@@ -28,11 +28,20 @@ public class UsuarioController {
         UsuariosDB.getInstance().crearUsuario(usuario,contrasenia,tipo);
     }
 
-    public void eliminarUsuario(Usuario usuarioO, String usuario, String contraseña) {
-        LoginController loginController=new LoginController();
-        if(loginController.tipoUsuario(usuario,contraseña)==1 and usuario.equals("Joshua")){
-            
+    public void eliminarUsuario(Usuario usuario1, String usuario, String contraseña) {
+        /**
+         * El primer administrador puede eliminar al que sea, 
+         * pero los otros administradores no pueden eliminar administradores
+         *
+         */
+        if(UsuariosDB.getInstance().tipoUsuario(usuario,contraseña)==1 && usuario.equals("Joshua")){
+            UsuariosDB.getInstance().eliminarUsuario(usuario1);
+        }else{
+            if(UsuariosDB.getInstance().tipoUsuario(usuario,contraseña)==1){
+                if(usuario1.getTipo()!=1){
+                    UsuariosDB.getInstance().eliminarUsuario(usuario1);
+                }
+            }
         }
     }
-    
 }

@@ -27,5 +27,17 @@ public class UsuariosDB {
     public ArrayList<Usuario> getUsuarios(){
         return usuarios;
     }
+    public void eliminarUsuario(Usuario u){
+        usuarios.remove(u);
+    }
+    public int tipoUsuario(String txtUsuario, String txtContraseña) {
+        for (Usuario usuario : usuarios){
+            if(usuario.getUsuario().equals(txtUsuario) && 
+                    usuario.getContrasenia().equals(txtContraseña)){
+                return usuario.getTipo();
+            }
+        }
+        return 0;
+    }
     
 }

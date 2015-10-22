@@ -16,8 +16,10 @@ public class UIMenuAuditor extends javax.swing.JFrame {
     /**
      * Creates new form MenuAuditor
      */
-    public UIMenuAuditor() {
+    private javax.swing.JFrame ventanaAnterior;
+    public UIMenuAuditor(javax.swing.JFrame ventanaAnterior) {
         initComponents();
+        this.ventanaAnterior=ventanaAnterior;
     }
 
     /**
@@ -31,6 +33,7 @@ public class UIMenuAuditor extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,6 +43,13 @@ public class UIMenuAuditor extends javax.swing.JFrame {
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setText("Volver");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
             }
         });
 
@@ -53,7 +63,8 @@ public class UIMenuAuditor extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(74, 74, 74)
                         .addComponent(jLabel1))
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -63,7 +74,9 @@ public class UIMenuAuditor extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addContainerGap())
         );
 
         pack();
@@ -74,8 +87,15 @@ public class UIMenuAuditor extends javax.swing.JFrame {
         GenerarReporteController generarReporteController = new GenerarReporteController(this);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        ventanaAnterior.setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
