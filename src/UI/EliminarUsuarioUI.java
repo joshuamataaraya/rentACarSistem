@@ -181,6 +181,8 @@ public class EliminarUsuarioUI extends javax.swing.JFrame {
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
         controller.eliminarUsuario((Usuario)cbUsuarios.getSelectedItem(), txtUsuario.getText(),txtContraseña.getText());
+        this.setVisible(false);
+        ventanaAnterior.setVisible(true);
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

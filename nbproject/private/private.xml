@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Logica/Cliente.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/UI/CrearAutoUI.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Datos/Datos.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Control/AlquilarAutoController.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/UI/AlquilarAutomovilUI.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Logica/Auto.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Datos/ClienteDB.java</file>
-            <file>file:/home/joshua/Documents/Gits/rentacar/rentACarSistem/src/Datos/AutoDB.java</file>
+            <file>file:/C:/Users/fm010/OneDrive/TEC/GitHub/rentACarSistem/src/UI/UIMenuAdministrador.java</file>
+            <file>file:/C:/Users/fm010/OneDrive/TEC/GitHub/rentACarSistem/src/UI/UIMenuCajero.java</file>
+            <file>file:/C:/Users/fm010/OneDrive/TEC/GitHub/rentACarSistem/src/UI/UIMenuAuditor.java</file>
         </group>
     </open-files>
 </project-private>

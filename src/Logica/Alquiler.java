@@ -21,6 +21,5 @@ public class Alquiler {
 
     public Date getFechaDevolucion() {
         return this.fechaDevolucion;
-    }
-    
+    } 
 }

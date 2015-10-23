@@ -7,7 +7,7 @@ public class UsuariosDB {
     private ArrayList<Usuario> usuarios;
     private UsuariosDB() {
         usuarios = new ArrayList<>();
-        usuarios.add(new Usuario("Joshua","123",1));
+        usuarios.add(new Usuario("Administrador","123",1));
         usuarios.add(new Usuario("Auditor","123",2));
         usuarios.add(new Usuario("Cajero","123",3));
     }

@@ -145,6 +145,8 @@ public class CrearUsuarioUI extends javax.swing.JFrame {
     private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
         // TODO add your handling code here:
         controller.crearUsuario(txtUsuario.getText(),txtContraseña.getText(),cbTipo.getSelectedIndex());
+        this.setVisible(false);
+        ventanaAnterior.setVisible(true);
     }//GEN-LAST:event_btnRegistrarseActionPerformed
 
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed

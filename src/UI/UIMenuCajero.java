@@ -5,6 +5,9 @@
  */
 package UI;
 
+import Control.AlquilarAutoController;
+import Control.ClienteController;
+
 /**
  *
  * @author joshua
@@ -94,11 +97,11 @@ public class UIMenuCajero extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        AlquilarAutoController alquilarAutoController = new AlquilarAutoController(this);        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        ClienteController clienteController = new ClienteController(this);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
